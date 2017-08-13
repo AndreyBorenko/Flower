@@ -51,4 +51,119 @@ body
 	max-width: 100%
 	height: auto
 
+.top-gradient
+	position: absolute
+	top: 0
+	left: 0
+	height: 300px
+	width: 100%
+	background: linear-gradient(to bottom, #ECD7E4, rgba(0,0,0,0))
+
+.container
+	max-width: 980px
+	padding-left: 20px
+	padding-right: 20px
+
+.secondary-header
+	padding-top: 20px
+
+.phone
+	margin-top: 8px
+	&__number
+		font-size: 23px
+		font-family: $font-light
+		letter-spacing: 2px
+		color: #000
+		transition: color .2s ease
+		&:hover
+			text-decoration: none
+			color: #fe3468
+			transition: color .2s ease
+
+.shop
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+	&__bag
+		position: relative
+		cursor: pointer
+		display: inline-block
+		margin-right: 15px
+		&:hover
+			.shop__bag-hover
+				opacity: 1
+			.shop__bag-blur
+				opacity: 0
+		&-blur
+			transition: opacity .2s ease
+		&-hover
+			transition: opacity .2s ease
+			position: absolute
+			opacity: 0
+			right: 0
+			top: 0
+	&__counter
+		position: absolute
+		right: 1px
+		top: -7px
+	&__ellipse
+		&-count
+			font-family: $font-josefin-sans-bold
+			line-height: 14px
+			font-size: 14px
+			border-radius: 50%
+			background: #fe3468
+			color: #fff
+			padding: 1px 6px
+	&__ordering
+		&-button
+			border: 2px solid #FE3468
+			border-radius: 20px
+			padding: 3px 3px 2px 3px
+			font-size: 14px
+			background: none
+			&:hover
+				border-color: #000
+				transition: all .2s ease
+				.shop__ordering-button-text
+					transition: all .2s ease
+					background: #000
+			&:focus
+				outline: none
+			&-text
+				font-size: 14px
+				line-height: 20px
+				padding: 2px 5px
+				font-family: $default-font
+				letter-spacing: 2px
+				color: #fff
+				background: #FE3468
+				border: none
+				border-radius: 20px
+	&__ordering
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	&__currency
+		font-family: $font-italic
+		font-size: 16px
+		line-height: 16px
+		margin: 0 0 2px 0
+		letter-spacing: 2px
+		cursor: default
+
+
+//#ECD7E4
+
+
+
+
+
+
+//$default-font: "OpenSans-Regular", sans-serif
+//$font-light: "OpenSans-Light", sans-serif
+//$font-semi-bold: "OpenSans-SemiBoldItalic", sans-serif
+//$font-italic: "OpenSans-Italic", sans-serif
+//$font-josefin-sans-bold: "JosefinSans-Bold", sans-serif
+
 @import "media" // Всегда в конце
