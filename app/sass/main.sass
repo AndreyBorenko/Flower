@@ -34,6 +34,9 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+a:focus
+	text-decoration: none
+
 html, body
 	height: 100%
 
@@ -122,12 +125,12 @@ body
 			padding: 3px 3px 2px 3px
 			font-size: 14px
 			background: none
-			&:hover
-				border-color: #000
-				transition: all .2s ease
-				.shop__ordering-button-text
-					transition: all .2s ease
-					background: #000
+			//&:hover
+			//	border-color: #000
+			//	transition: all .2s ease
+			//	.shop__ordering-button-text
+			//		transition: all .2s ease
+			//		background: #000
 			&:focus
 				outline: none
 			&-text
@@ -152,13 +155,77 @@ body
 		letter-spacing: 2px
 		cursor: default
 
+.header-section
+	background-image: url('../img/first-block-bg.jpg');
+	background-position: bottom center
+	background-repeat: no-repeat
+	padding-bottom: 320px
 
-//#ECD7E4
+header.header
+	padding-top: 60px
+	text-align: center
+	.logo-block
+		padding-bottom: 15px
+	.main-menu
+		.menu-list
+			list-style: none
+			padding: 0
+			margin: 0
+			.menu-item
+				display: inline-block
+				padding-bottom: 13px
+				position: relative
+				.hover
+					width: 60px
+					display: block
+					margin: auto
+					margin-top: 8px
+					height: 1px
+					background: #FE3468
+					opacity: 0
+					transition: all .2s ease
+				.link
+					color: #000
+					font-size: 20px
+					letter-spacing: 3px
+					font-family: $font-light
+					transition: all .2s ease
+					&:focus
+						text-decoration: none
+					&:hover
+						text-decoration: none
+						~.hover
+							opacity: 1
+						&:after
+							background: #FE3468
+				&:not(:last-child)
+					margin-right: 30px
 
+.about-us
+	padding-bottom: 500px
+	background-image: url('../img/secondt-block-bg.jpg')
+	background-position: top center
+	background-repeat: no-repeat
+	padding-top: 55px
 
-
-
-
+.section-title
+	font-family: $default-font
+	font-size: 30px
+	letter-spacing: 4px
+	text-transform: uppercase
+	margin: 0
+	line-height: 30px
+	font-weight: 500
+	position: relative
+	padding-bottom: 28px
+	&:after
+		content: ''
+		width: 115px
+		height: 1px
+		background: #FE3468
+		position: absolute
+		left: 0
+		bottom: 0
 
 //$default-font: "OpenSans-Regular", sans-serif
 //$font-light: "OpenSans-Light", sans-serif
