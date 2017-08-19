@@ -160,6 +160,7 @@ body
 	background-position: bottom center
 	background-repeat: no-repeat
 	padding-bottom: 320px
+	border-bottom: 1px solid #E6E6E6
 
 header.header
 	padding-top: 60px
@@ -202,11 +203,36 @@ header.header
 					margin-right: 30px
 
 .about-us
-	padding-bottom: 500px
-	background-image: url('../img/secondt-block-bg.jpg')
-	background-position: top center
-	background-repeat: no-repeat
-	padding-top: 55px
+	padding: 55px 0 55px 0
+	//background: url('../img/secondt-block-bg.jpg') top center no-repeat, linear-gradient(to top, rgba(0,0,0,.12), rgba(0,0,0,0), rgba(0,0,0,0))
+	//box-shadow: 0 0 25px rgba(0, 0, 0, 0.55)
+	background: url('../img/secondt-block-bg.jpg') top center no-repeat, url('../img/shadow-bg-for-second-block.jpg') bottom no-repeat
+	.content-block
+		position: relative
+		margin-top: 40px
+		padding: 140px 0 0 30px
+		.background-block
+			position: absolute
+			right: 0
+			top: 0
+		.text-block
+			position: relative
+			max-width: 495px
+			border: 1px solid #000
+			padding: 5px 15px 5px 30px
+			background: #fff
+			&__content
+				color: #000
+				line-height: 28px
+				letter-spacing: 1px
+				font-family: $default-font
+				font-size: 15px
+
+
+
+
+
+
 
 .section-title
 	font-family: $default-font
@@ -226,6 +252,7 @@ header.header
 		position: absolute
 		left: 0
 		bottom: 0
+
 
 //$default-font: "OpenSans-Regular", sans-serif
 //$font-light: "OpenSans-Light", sans-serif
