@@ -264,6 +264,9 @@ header.header
 
 .flowers-list
 	padding-bottom: 300px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
 
 .flower
 	max-width: 275px
@@ -272,6 +275,14 @@ header.header
 	display: inline-block
 	width: 100%
 	padding: 10px
+	margin: 15px 10px 15px 10px
+	cursor: default
+	position: relative
+	transition: all .2s ease
+	top: 0
+	&:hover
+		top: -10px
+		box-shadow: 0 10px 31px -5px rgba(0,0,0,0.3)
 	&__line
 		width: 115px
 		height: 1px
