@@ -13,13 +13,87 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width : 724px)
+  header.header
+    padding-top: 45px
+  .about-us
+    padding: 55px 0 25px 0
+    .content-block
+      padding: 140px 0 0 0
+    .background-block
+      left: 50px
+  .posy
+    padding: 60px 0 15px 0
+    .flower
+      max-width: 325px
+      margin: 8px 0
+  .delivery
+    .section-title
+      padding-top: 55px
+    .info-block
+      display: flex
+      align-items: baseline
+    .info-text
+      text-align: left
+      br
+        display: none
+    .flower-img
+      margin-right: 20px
+    .flower__line
+      display: none
+  .contacts
+    padding-bottom: 75px
+    &__down
+      padding: 20px 0 85px 0
+  .footer
+    .row
+      flex-wrap: wrap
+      & > div
+        width: 100%
+        text-align: center
+      .phone
+        text-align: center
+      .menu-list
+        display: none
+      .go-up
+        display: block
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .about-us
+    .content-block
+      padding: 0
+      margin-top: 25px
+      .background-block
+        display: none
+      .text-block
+        border: none
+        padding: 0
+        background: transparent
+  .posy
+    .flower
+      max-width: none
+      &:not(:first-child):not(:nth-child(2))
+        display: none
+    .filters
+      display: none
+    .section-header-block
+      padding-bottom: 35px
+
+  .contacts
+    padding: 45px 0 45px 0
+    background: #fff
+    &__down
+      display: none
+    &__form
+      border: none
+      padding: 0
+    &__form-block
+      &:after
+        display: none
+
+
 
 
 /* Custom, iPhone Retina */

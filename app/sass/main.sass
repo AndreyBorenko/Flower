@@ -188,7 +188,7 @@ body
 		cursor: default
 
 .header-section
-	background-image: url('../img/first-block-bg.jpg');
+	background-image: url('../img/first-block-bg.jpg')
 	background-position: bottom center
 	background-repeat: no-repeat
 	padding-bottom: 320px
@@ -245,6 +245,8 @@ header.header
 			position: absolute
 			right: 0
 			top: 0
+			img
+				max-width: 100%
 		.text-block
 			position: relative
 			max-width: 495px
@@ -396,7 +398,7 @@ header.header
 		img
 			cursor: pointer
 			position: relative
-			//animation: contacts-down 2s infinite
+			//animation: contacts-down 1.5s infinite
 	&__title
 		font-size: 25px
 		letter-spacing: 2px
@@ -481,12 +483,28 @@ header.header
 					&:hover
 						opacity: 1
 						text-decoration: none
+	.go-up
+		display: none
+		margin-top: 15px
+		a
+			font-family: $font-light
+			font-size: 23px
+			color: #fff
+			opacity: .5
+			border: 2px solid #fff
+			border-radius: 10px
+			padding: 5px 10px
+			transition: all .2s ease
+			&:hover
+				opacity: 1
 	.phone
-		font-family: $font-light
-		font-size: 23px
-		color: #fff
-		text-align: right
-		cursor: default
+		a
+			font-family: $font-light
+			font-size: 23px
+			color: #fff
+			text-align: right
+			cursor: pointer
+
 
 
 
