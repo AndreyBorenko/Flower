@@ -101,6 +101,7 @@ body
 
 .secondary-header
 	padding-top: 20px
+	position: relative
 
 .phone
 	margin-top: 8px
@@ -157,6 +158,8 @@ body
 			padding: 3px 3px 2px 3px
 			font-size: 14px
 			background: none
+			&-text
+				white-space: nowrap
 			//&:hover
 			//	border-color: #000
 			//	transition: all .2s ease
@@ -193,12 +196,13 @@ body
 	background-repeat: no-repeat
 	padding-bottom: 320px
 	border-bottom: 1px solid #E6E6E6
-
-header.header
-	padding-top: 60px
-	text-align: center
+	header
+		padding-top: 60px
+		text-align: center
 	.logo-block
 		padding-bottom: 15px
+	.hidden-menu
+		display: none
 	.main-menu
 		.menu-list
 			list-style: none
@@ -233,6 +237,15 @@ header.header
 							background: #FE3468
 				&:not(:last-child)
 					margin-right: 30px
+
+.icon-burger
+	font-style: normal
+	color: #ff316a
+	font-size: 46px
+	line-height: 66px
+	cursor: pointer
+	&:before
+		content: '\f0c9'
 
 .about-us
 	padding: 55px 0 55px 0
@@ -278,6 +291,7 @@ header.header
 		padding: 0 22px 2px 22px
 		line-height: 30px
 		border-radius: 10px
+		white-space: nowrap
 		&.current
 			border: 1px solid #fe3468
 		&:hover
@@ -290,9 +304,7 @@ header.header
 	align-items: center
 	padding-bottom: 40px
 .flowers-list
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-between
+	text-align: center
 .flower
 	max-width: 275px
 	text-align: center
@@ -504,6 +516,7 @@ header.header
 			color: #fff
 			text-align: right
 			cursor: pointer
+
 
 
 

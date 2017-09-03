@@ -14,6 +14,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 724px)
+  .phone
+    margin-top: 15px
+    &__number
+      font-size: 19px
   header.header
     padding-top: 45px
   .about-us
@@ -32,7 +36,7 @@
       padding-top: 55px
     .info-block
       display: flex
-      align-items: baseline
+      align-items: center
     .info-text
       text-align: left
       br
@@ -61,6 +65,39 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  .header-section
+    header
+      .main-menu
+        display: none
+    .hidden-menu
+      display: block
+      .main-menu
+        position: absolute
+        z-index: 999
+        top: 90px
+        width: 100%
+        text-align: center
+        .menu-list
+          background: rgba(236, 215, 228, .9)
+          border-radius: 10px
+          padding: 20px 0
+          .menu-item
+            display: block
+            margin: 0
+            padding: 0
+            .link
+              white-space: nowrap
+              font-weight: 600
+              color: rgba(0, 0, 0, .7)
+              display: block
+              width: 100%
+              &:hover
+                color: #fe3468
+            .phone
+              margin: 0
+              display: block
+    .phone
+      display: none
   .about-us
     .content-block
       padding: 0
@@ -76,11 +113,19 @@
       max-width: none
       &:not(:first-child):not(:nth-child(2))
         display: none
+      &__more
+        text-align: center
+        p
+          margin: 0
+          a
+            font-size: 30px
     .filters
       display: none
     .section-header-block
       padding-bottom: 35px
-
+  .delivery
+    .info-text
+      font-size: 17px
   .contacts
     padding: 45px 0 45px 0
     background: #fff
@@ -89,6 +134,12 @@
     &__form
       border: none
       padding: 0
+    &__title
+      display: block
+      &-left
+        text-align: left
+      &-right
+        text-align: right
     &__form-block
       &:after
         display: none
